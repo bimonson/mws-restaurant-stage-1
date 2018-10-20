@@ -125,7 +125,7 @@ nav h1 a {
   font-size: 1.25rem;
   font-weight: normal;
   line-height: 1;
-  margin: 10px;
+  margin: 0.5rem;
 }
 .filter-options select {
   background-color: white;
@@ -134,9 +134,9 @@ nav h1 a {
   font-size: 11pt;
   height: 35px;
   letter-spacing: 0;
-  margin: 10px;
-  padding: 0 10px;
-  width: 200px;
+  margin: 0.5rem;
+  padding: 0 0.5rem;
+  width: 80%;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -286,8 +286,11 @@ nav h1 a {
 
 /* ====================== Media Queries ====================== */
 
-@media screen and (min-width: 39em) {
+@media screen and (min-width: 35em) {
   .filter-options {
     flex-direction: row;
+  }
+  .filter-options select {
+    width: 11rem;
   }
 }
