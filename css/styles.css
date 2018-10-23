@@ -226,40 +226,43 @@ nav h1 a {
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 20pt;
-  font-weight: 200;
+  font-size: 1.5em;
+  font-weight: 600;
   letter-spacing: 0;
-  margin: 15px 0 30px;
-  text-transform: uppercase;
-  line-height: 1.1;
+  line-height: 1.25;
+  margin-bottom: 1rem;
 }
 #restaurant-img {
-	width: 90%;
+  max-width: 100%;
+  min-width: 100%;
 }
-#restaurant-address {
-  font-size: 12pt;
-  margin: 10px 0px;
+#restaurant-address, #restaurant-hours {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+#restaurant-hours td {
+  vertical-align: top;
+  padding-bottom: 0.5rem;
+}
+#restaurant-hours tr td:first-child {
+  padding-right: 0.5rem;
 }
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
-  font-size: 12pt;
   font-weight: 300;
   letter-spacing: 10px;
-  margin: 0 0 20px;
-  padding: 2px 0;
+  margin: 0;
+  padding: 0.5rem;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+	width: 100%;
 }
 #restaurant-container, #reviews-container {
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  padding: 1rem;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  /* awaiting styles */
 }
 #reviews-container h2 {
   color: #f58500;
