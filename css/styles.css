@@ -259,7 +259,8 @@ nav h1 a {
 	width: 100%;
 }
 #restaurant-container, #reviews-container {
-  padding: 1rem;
+  margin: 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
 #reviews-container h2 {
