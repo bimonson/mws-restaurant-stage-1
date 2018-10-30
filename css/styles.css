@@ -46,7 +46,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   background-color: #f3f3f3;
   min-height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 #footer {
   background-color: #444;
@@ -108,6 +109,9 @@ nav h1 a {
     text-decoration: underline;
 }
 /* ====================== Map ====================== */
+#map-container {
+  flex: 100%;
+}
 #map {
   height: 45vh;
   width: 100%;
