@@ -243,6 +243,9 @@ nav h1 a {
   padding-bottom: 1rem;
   border-bottom: 1px solid #ddd;
 }
+#restaurant-hours {
+  width: 100%;
+}
 #restaurant-hours td {
   vertical-align: top;
   padding-bottom: 0.5rem;
@@ -263,9 +266,7 @@ nav h1 a {
 }
 #restaurant-container, #reviews-container {
   margin: 1rem;
-  border-bottom: 1px solid #ddd;
 }
-
 #reviews-container h2 {
   color: #f58500;
   font-size: 1.25em;
