@@ -226,7 +226,7 @@ nav h1 a {
   position: absolute;
   width: 50%;
 } */
-#restaurant-name {
+#restaurant-name, #reviews-container h2 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 1.5em;
@@ -267,12 +267,12 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   margin: 1rem;
 }
-#reviews-container h2 {
+/* #reviews-container h2 {
   color: #f58500;
   font-size: 1.25em;
   font-weight: 600;
   letter-spacing: 0;
-}
+} */
 #reviews-list {
   margin: 0;
   padding: 0;
