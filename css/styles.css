@@ -247,17 +247,21 @@ nav h1 a {
 }
 #restaurant-address, #restaurant-hours {
   padding-bottom: 1rem;
+}
+#restaurant-address {
+  text-align: center;
   border-bottom: 1px solid #ddd;
 }
 #restaurant-hours {
-  width: 100%;
+  text-align: left;
+  margin: 0 auto;
 }
 #restaurant-hours td {
   vertical-align: top;
   padding-bottom: 0.5rem;
 }
 #restaurant-hours tr td:first-child {
-  padding-right: 0.5rem;
+  padding-right: 0.75rem;
 }
 #restaurant-cuisine {
   background-color: #333;
@@ -272,6 +276,9 @@ nav h1 a {
 }
 #restaurant-container, #reviews-container {
   margin: 1rem;
+}
+#restaurant-container {
+  border-bottom: 1px solid #ddd;
 }
 /* #reviews-container h2 {
   color: #f58500;
