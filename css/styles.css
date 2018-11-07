@@ -48,6 +48,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #footer {
   background-color: #1b1b1b;
