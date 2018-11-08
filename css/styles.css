@@ -278,8 +278,14 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   margin: 1rem;
 }
+#reviews-container {
+  flex: 1 1 24em;
+  max-width: 33em;
+}
 #restaurant-container {
   border-bottom: 1px solid #ddd;
+  flex: 1 1 18em;
+  max-width: 40em;
 }
 /* #reviews-container h2 {
   color: #f58500;
