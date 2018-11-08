@@ -290,6 +290,8 @@ nav h1 a {
 #reviews-list {
   margin: 0;
   padding: 0;
+  flex: 1 1 22em;
+  max-width: 40em;
 }
 #reviews-list li {
   background-color: #fff;
