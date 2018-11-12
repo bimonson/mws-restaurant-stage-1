@@ -160,7 +160,12 @@ createRestaurantHTML = (restaurant) => {
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
-  image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  const imgUrlBase = DBHelper.imageUrlForRestaurant(restaurant);
+  const imgParts = imgUrlBase.split('.');
+  const imgSmallOneX = `${imgParts[0]}-small-1x.${imgParts[1]}`;
+  const imgSmallTwoX = `${imgParts[0]}-small-2x.${imgParts[1]}`;
+  image.src = imgSmallOneX;
+  image.srcset = `${imgSmallOneX} 1x, ${imgSmallTwoX} 2x`;
   li.append(image);
 
   const name = document.createElement('h1');
