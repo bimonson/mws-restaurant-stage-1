@@ -203,31 +203,28 @@ img.leaflet-marker-icon:focus {
   margin: 0;
   font-size: 11pt;
 }
-#restaurants-list li a {
+#restaurants-list li button {
   background-color: #ef6c00;
-  border-bottom: 3px solid #b53d00;
+  border: 0;
+  border-bottom: 0.25rem solid #b53d00;
   color: #000000;
   display: inline-block;
-  font-size: 10pt;
-  margin: 15px 0 0;
-  padding: 8px 30px 10px;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 1rem 0 0;
+  padding: 0.5rem 1rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
-#restaurants-list li a:hover,
-#restaurants-list li a:focus {
+#restaurants-list li button:hover,
+#restaurants-list li button:focus {
   background-color: #ff9d3f;
   border-bottom: 3px solid #ef6c00;
-  color: #000000;
   outline: 0.25rem solid #000000;
-  display: inline-block;
-  font-size: 10pt;
-  margin: 15px 0 0;
-  padding: 8px 30px 10px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 /* ====================== Restaurant Details ====================== */
