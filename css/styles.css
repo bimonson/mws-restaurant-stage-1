@@ -7,7 +7,12 @@
 html {
   font-size: 16px;
 }
-
+:focus,
+:hover {
+    color: #000a12;
+    background-color: #ff9d3f;
+    outline: 0.25rem solid #ff9d3f;
+}
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
