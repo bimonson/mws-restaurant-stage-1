@@ -334,3 +334,12 @@ nav h1 a {
     width: 11rem;
   }
 }
+@media screen and (min-width: 120em) {
+  #map-container {
+    flex: 1;
+    margin-right: 1rem;
+  }
+  .inside #map {
+    height: 100vh;
+  }
+}
