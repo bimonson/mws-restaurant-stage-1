@@ -116,6 +116,12 @@ nav h1 a {
   width: 100%;
   background-color: #ccc;
 }
+img.leaflet-marker-icon:hover,
+img.leaflet-marker-icon:focus {
+  color: #000a12;
+  background-color: #ff9d3f;
+  outline: 0.25rem solid #ff9d3f;
+}
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
