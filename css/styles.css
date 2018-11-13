@@ -106,6 +106,12 @@ nav h1 a {
     color: #ff9d3f;
     text-decoration: none;
 }
+#breadcrumb li a:focus,
+#breadcrumb li a:hover {
+    color: #000a12;
+    background-color: #ff9d3f;
+    outline: 0.25rem solid #ff9d3f;
+}
 
 /* ====================== Map ====================== */
 #map-container {
