@@ -97,12 +97,11 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const imgLargeOneX = `${imgParts[0]}-large-1x.${imgParts[1]}`;
   const imgLargeTwoX = `${imgParts[0]}-large-2x.${imgParts[1]}`;
   image.src = imgMediumOneX;
-  image.srcset = `${imgSmallOneX} 1x, ${imgSmallTwoX} 2x,
-  ${imgMediumOneX} 1x, ${imgMediumTwoX} 2x,
-  ${imgLargeOneX} 1x, ${imgLargeTwoX} 2x`;
-  image.sizes =  `(max-width: 360px) 320px,
-                  (max-width: 480px) 480px,
-                  (max-width: 640px) 640px`;
+  image.srcset = `${imgSmallOneX} 320w, ${imgSmallTwoX} 640w,
+  ${imgMediumOneX} 480w, ${imgMediumTwoX} 960w,
+  ${imgLargeOneX} 640w, ${imgLargeTwoX} 1280w`;
+  image.sizes =  `(min-width: 735px) 50vw, 100vw,
+                  640w`;
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
