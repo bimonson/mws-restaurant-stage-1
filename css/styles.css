@@ -215,6 +215,20 @@ img.leaflet-marker-icon:focus {
   text-decoration: none;
   text-transform: uppercase;
 }
+#restaurants-list li a:hover,
+#restaurants-list li a:focus {
+  background-color: #ff9d3f;
+  border-bottom: 3px solid #ef6c00;
+  color: #000000;
+  outline: 0.25rem solid #000000;
+  display: inline-block;
+  font-size: 10pt;
+  margin: 15px 0 0;
+  padding: 8px 30px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
