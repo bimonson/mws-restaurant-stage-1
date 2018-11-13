@@ -90,7 +90,7 @@ nav h1 a {
 #breadcrumb li {
     display: inline;
     color: #ffffff;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
