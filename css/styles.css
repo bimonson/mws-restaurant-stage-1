@@ -150,6 +150,13 @@ img.leaflet-marker-icon:focus {
   width: 80%;
 }
 
+.filter-options select:focus,
+.filter-options select:hover {
+  color: #000a12;
+  background-color: #ff9d3f;
+  outline: 0.25rem solid #ff9d3f;
+}
+
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   background-color: #f3f3f3;
