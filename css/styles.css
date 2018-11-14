@@ -375,8 +375,10 @@ img.leaflet-marker-icon:focus {
 .skip-link {
   display: block;
   position: absolute;
-  top: 2em;
   left: -70em;
   background-color: white;
   padding: 1rem;
+}
+.skip-link:focus {
+  left: unset;
 }
