@@ -369,3 +369,13 @@ img.leaflet-marker-icon:focus {
     height: 100vh;
   }
 }
+
+/* ====================== Skip-link ====================== */
+.skip-link {
+  display: block;
+  position: absolute;
+  top: 2em;
+  left: -70em;
+  background-color: white;
+  padding: 1rem;
+}
