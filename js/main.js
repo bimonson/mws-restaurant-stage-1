@@ -117,6 +117,9 @@ updateRestaurants = () => {
   DBHelper.fetchRestaurantByCuisineAndNeighborhood(cuisine, neighborhood, (error, restaurants) => {
     if (error) { // Got an error!
       console.error(error);
+    } else if(restaurants === undefined || restaurants.length == 0) {
+      resetRestaurants(restaurants);
+      noMatchesHTML();
     } else {
       resetRestaurants(restaurants);
       fillRestaurantsHTML();
@@ -150,6 +153,24 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
     ul.append(createRestaurantHTML(restaurant));
   });
   addMarkersToMap();
+}
+
+/**
+ * No matches message when filtering produces no results.
+ */
+noMatchesHTML = () => {
+  const ul = document.getElementById('restaurants-list');
+  const li = document.createElement('li');
+
+  const messageTitle = document.createElement('h2');
+  messageTitle.innerHTML = 'No results';
+  li.append(messageTitle);
+
+  const message = document.createElement('p');
+  message.innerHTML = 'Please try a different combination of neighborhood and cuisine.'
+  li.append(message);
+
+  ul.append(li);
 }
 
 /**
