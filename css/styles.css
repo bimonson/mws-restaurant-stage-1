@@ -84,7 +84,8 @@ nav h1 a {
     list-style: none;
     background-color: #424242;
     margin: 0;
-    /* width: calc(50% - 80px); */
+    width: 100%;
+    text-align: left;
 }
 
 /* Display list items side by side */
