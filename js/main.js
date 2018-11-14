@@ -169,7 +169,7 @@ createRestaurantHTML = (restaurant) => {
   image.srcset = `${imgSmallOneX} 1x, ${imgSmallTwoX} 2x`;
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 
