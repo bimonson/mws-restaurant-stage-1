@@ -131,7 +131,7 @@ img.leaflet-marker-icon:focus {
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
-  width: 100%;
+  width: 100vw;
   background-color: #6d6d6d;
   align-items: center;
   padding: 0.5em 1em;
