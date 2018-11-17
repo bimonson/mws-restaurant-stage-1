@@ -15,11 +15,12 @@ let allCaches = [
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(staticCacheName).then(cache => {
-      return cache
-        .addAll([
-        '/', // caches index.html
+      return cache.addAll([
+        '/',
+        '/index.html',
         '/restaurant.html',
         '/css/styles.css',
+        '/js',
         '/js/dbhelper.js',
         '/js/main.js',
         '/js/register-sw.js',
