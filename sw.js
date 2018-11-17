@@ -32,3 +32,18 @@ self.addEventListener('install', event => {
     })
   );
 });
+
+// Delete previous caches, if any, on service worker activation
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.filter(cacheName => {
+          return cacheName.startsWith(appName) && !allCaches.includes(cacheName);
+        }).map(cacheName => {
+          return caches.delete(cacheName);
+        })
+      );
+    })
+  );
+});
