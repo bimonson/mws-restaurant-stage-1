@@ -19,7 +19,7 @@ self.addEventListener('install', event => {
         .addAll([
         '/', // caches index.html
         '/restaurant.html',
-        'css/styles.css',
+        '/css/styles.css',
         '/js/dbhelper.js',
         '/js/main.js',
         '/js/register-sw.js',
