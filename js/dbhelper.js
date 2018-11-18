@@ -181,11 +181,11 @@ class DBHelper {
    * Map Offline
    */
   static mapOffline() {
-    const map = document.getElementById('map');
-    map.className = 'map-offline';
-    map.innerHTML = `<div class="warning-icon">!</div>
-    <div class="warning-heading">Maps are currently unavailable</div>
-    <div class="warning-body">Please make sure you are online and try again.</div>`
+    const map = document.getElementById("map");
+    map.className = "map-offline";
+    map.innerHTML = `<h3 class="warning-icon">!</h3>
+    <h3 class="warning-heading">Maps are currently unavailable</h3>
+    <p class="warning-body">Please make sure you are online and try again.</p>`;
   }
 
 }
